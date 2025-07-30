@@ -2,6 +2,9 @@ name: "Release: assets"
 
 on:
   workflow_dispatch:
+  push:
+    tags:
+      - '*.*.*'
   release:
     types: [created]
 
