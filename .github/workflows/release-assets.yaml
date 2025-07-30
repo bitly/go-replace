@@ -1,6 +1,7 @@
 name: "Release: assets"
 
 on:
+  workflow_dispatch:
   release:
     types: [created]
 
@@ -21,8 +22,7 @@ jobs:
           check-latest: true
 
       - name: Build
-        run: |
-          make release-assets
+        run: make release-assets
 
       - name: Upload assets to release
         uses: svenstaro/upload-release-action@v2
