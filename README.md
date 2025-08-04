@@ -1,3 +1,5 @@
+This is a fork of go-replace with upgraded [webdevops/golang](https://github.com/webdevops/go-replace) packages to resolve critical and high severity findings. It's maintained by [@bitly](https://github.com/bitly).
+
 # go-replace
 
 [![GitHub release](https://img.shields.io/github/release/webdevops/go-replace.svg)](https://github.com/webdevops/go-replace/releases)
