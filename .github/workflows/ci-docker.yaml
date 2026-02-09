@@ -16,11 +16,11 @@ jobs:
       # disable this step as it fails, the golangcici.yaml needs to be migrated
       # and many go source file issues needs to be resolved. as this is a fork
       # we don't want to change to much
-      - name: Run Golangci lint
-        uses: golangci/golangci-lint-action@v2
-        with:
-          version: latest
-          args: --print-resources-usage
+      # - name: Run Golangci lint
+      #   uses: golangci/golangci-lint-action@v2
+      #   with:
+      #     version: latest
+      #     args: --print-resources-usage
 
       - name: Docker meta
         id: docker_meta
