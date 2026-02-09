@@ -13,6 +13,9 @@ jobs:
         with:
           swap-size-gb: 12
 
+      # disable this step as it fails, the golangcici.yaml needs to be migrated
+      # and many go source file issues needs to be resolved. as this is a fork
+      # we don't want to change to much
       - name: Run Golangci lint
         uses: golangci/golangci-lint-action@v2
         with:
